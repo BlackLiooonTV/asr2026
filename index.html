@@ -292,6 +292,32 @@
     border-top:1px solid var(--panel-border);
   }
 
+  .footer-links{
+    display:flex;
+    justify-content:center;
+    gap:1.6rem;
+    margin-bottom:1.2rem;
+    flex-wrap:wrap;
+  }
+  .footer-links a{
+    color:var(--muted);
+    text-decoration:none;
+    letter-spacing:.12em;
+    transition:color .2s ease;
+    position:relative;
+    padding-bottom:2px;
+  }
+  .footer-links a:hover{
+    color:var(--turquoise);
+  }
+  .footer-links a:focus-visible{
+    outline:2px solid var(--turquoise);
+    outline-offset:4px;
+  }
+  .footer-sep{
+    color:var(--panel-border);
+  }
+
   @media (max-width:520px){
     .card{ clip-path:none; padding:1.6rem 1.4rem; }
     .card::before{ clip-path:none; }
@@ -435,6 +461,11 @@
 </main>
 
 <footer>
+  <nav class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <span class="footer-sep">/</span>
+    <a href="datenschutz.html">Datenschutzerklärung</a>
+  </nav>
   Team Aserion — Fortnite Competitive Organisation
 </footer>
 
